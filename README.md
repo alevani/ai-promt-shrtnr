@@ -2,8 +2,6 @@
 This is a version 0.1
 
 # AI Prompt Shrtnr
-Most natural language AI's revenue is based on the number of tokens sent to their API, so this tool helps you save money by creating a token dictionary to shorten your prompts.
-
 With the emergence of AI, businesses that relies on heavy trained natural language processing models are flourishing. The most used business model seems to be "$ per token used" when sending a prompt to an natural language processing API.
 
 
