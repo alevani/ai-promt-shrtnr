@@ -8,14 +8,17 @@ Most natural language AI's revenue is based on the number of tokens sent to thei
 - There are 1000 ways to improve the text analysis
 - When translating to tokenized sentence, if a word does not exist, add it to the dictionnary
 
-## Disclaimer
+## DISCLAIMER
 In a duty of irony, most of the program has actually been written by an AI.
 
-## How?
+
+This statement is intended to inform the reader that the information and materials provided through the program are intended for general informational purposes only, and should not be construed as a direct or indirect attack on any specific company. The use of the program is subject to the conditions that the user assumes full responsibility for any actions taken based on the information and materials provided. The program is provided "as is" without warranty of any kind, express or implied, and the user assumes all risks associated with its use.
+
+## HOW?
 The tool works by analyzing a set of input prompts to generate a map of word frequencies, then assigns a short token to each word.
 The output is a prompt that contains the dictionnary to use, so that you can send it ahead of making your API calls.
 You can also use the program to transalte a given sentence in to a token based sentence.
-
+> Make sure that all the words from your sentence are in the dictionnary, otherwise they will be skipped
 ## RUN ME
 ```bash
 cargo run
