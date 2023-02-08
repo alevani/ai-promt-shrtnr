@@ -1,3 +1,6 @@
+# PRE-READ DISCLAIMER
+This is a version 0.1
+
 # AI Prompt Shrtnr
 Most natural language AI's revenue is based on the number of tokens sent to their API, so this tool helps you save money by creating a token dictionary to shorten your prompts.
 
@@ -15,10 +18,10 @@ Write a short rust program that takes two list of number as input, and computes 
 which is 103 characters long, could be shorten to
 
 ```
-O A V B J C W P Q R X Y Z AA AB  AC R  P Q (42 characters in length)
+O A V B J C W P Q R X Y Z AA AB  AC R  P Q
 ```
 
-Saving half the cost of the original prompt.
+42 characters in length, saving half the cost of the original prompt.
 
 
 This tool is useful if your API performs many of the same prompts, as the first heading prompt that contains the dictionnary can be quite expensive.
