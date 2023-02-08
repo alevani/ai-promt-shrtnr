@@ -43,34 +43,6 @@ fn translate_sentence(sentence: &str, dictionary: &LinkedHashMap<String, String>
         .join(" ")
 }
 
-fn generate_dictionary_from_file() -> LinkedHashMap<String, String> {
-    let mut word_counts: LinkedHashMap<String, usize> = LinkedHashMap::new();
-
-    input::get_input().split('\n').for_each(|row| {
-        let mut splitted = row.split(',');
-        let word = splitted.next().unwrap();
-        let freq = splitted.next().unwrap();
-
-        word_counts.insert(
-            word.to_string(),
-            freq.parse::<i32>().unwrap_or_default() as usize,
-        );
-    });
-
-    // Sort the words by frequency
-    let mut words: Vec<_> = word_counts.keys().cloned().collect();
-    words.sort_by_key(|word| Reverse(word_counts[word]));
-
-    // Assign each word a token
-    let mut dictionary = LinkedHashMap::new();
-    
-    words.into_iter().enumerate().for_each(|(k, v)| {
-        dictionary.insert(v, excel_style(k as i32));
-    });
-   
-    dictionary
-}
-
 const LETTERS: &str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 fn excel_style(col: i32) -> String {
@@ -86,18 +58,17 @@ fn excel_style(col: i32) -> String {
 }
 
 fn main() {
-    // let sentences = vec!["Generate a program that prints The quick brown fox jumps over the lazy dog in rust", "Generate a program that prints Hello World in rust", "Write a rust program that outputs 'The quick brown fox jumps over the lazy dog'", "Create a rust code that displays 'The quick brown fox jumps over the lazy dog'", "Build a rust program that prints 'The quick brown fox jumps over the lazy dog'", "Compose a rust script that prints the sentence 'The quick brown fox jumps over the lazy dog'", "Design a rust program that says 'The quick brown fox jumps over the lazy dog' on the console", "Make a rust code that shows 'The quick brown fox jumps over the lazy dog' on the screen", "Develop a rust program that prints 'The quick brown fox jumps over the lazy dog' on the output"];
-    let sentences = vec!["Write a prompt that generates Rust code to output hello world"];
-    // let dictionary = generate_dictionary(&sentences);
-    let dictionary = generate_dictionary_from_file();
+    let sentences = vec!["Generate a program that prints The quick brown fox jumps over the lazy dog in rust", "Generate a program that prints Hello World in rust", "Write a rust program that outputs 'The quick brown fox jumps over the lazy dog'", "Create a rust code that displays 'The quick brown fox jumps over the lazy dog'", "Build a rust program that prints 'The quick brown fox jumps over the lazy dog'", "Compose a rust script that prints the sentence 'The quick brown fox jumps over the lazy dog'", "Design a rust program that says 'The quick brown fox jumps over the lazy dog' on the console", "Make a rust code that shows 'The quick brown fox jumps over the lazy dog' on the screen", "Develop a rust program that prints 'The quick brown fox jumps over the lazy dog' on the output"];
+    let dictionary = generate_dictionary(&sentences);
+    
 
-    //     println!("
-    // I will now talk only with a token generated sentence based on the following dictionnary:
+        println!("
+    I will now talk only with a token generated sentence based on the following dictionnary:
 
-    // {dictionary:?}
+    {dictionary:?}
 
-    // Every time I write a new prompt, use the dictionary to translate the token based sentence into a prompt that you can understand. Then act as if it was the original prompt and execute what the prompt says.
-    //     ");
+    Every time I write a new prompt, use the dictionary to translate the token based sentence into a prompt that you can understand. Then act as if it was the original prompt and execute what the prompt says.
+        ");
 
     for sentence in sentences {
         println!(

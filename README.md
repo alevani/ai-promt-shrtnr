@@ -24,19 +24,23 @@ cargo run
 output:
 
 ```
-I will now talk only with a token generated sentence based on the following dictionnary:
 
-       {"rust": "c", "prints": "n", "hello": "{c", "build": "{i", "dog'": "l", "world": "v", "sentence": "y", "compose": "{f", "over": "i", "dog": "z", "that": "d", "brown": "h", "make": "u", "create": "t", "script": "{d", "output": "{g", "develop": "{j", "program": "m", "outputs": "x", "lazy": "e", "quick": "j", "generate": "p", "code": "q", "displays": "w", "a": "b", "jumps": "f", "write": "s", "design": "{a", "console": "{b", "the": "a", "screen": "{h", "'the": "k", "in": "r", "on": "o", "says": "{e", "shows": "{k", "fox": "g"}
+    I will now talk only with a token generated sentence based on the following dictionnary:
 
-Every time I write a new prompt use the dictionary to translate the token based sentence into a prompt that you can understand. Then act as if it was the original prompt and execute what the prompt says.
+    {"the": "", "a": "A", "that": "B", "rust": "C", "quick": "D", "brown": "E", "fox": "F", "jumps": "G", "over": "H", "lazy": "I", "'the": "J", "dog'": "K", "program": "L", "prints": "M", "on": "N", "generate": "O", "in": "P", "code": "Q", "dog": "R", "hello": "S", "world": "T", "write": "U", "outputs": "V", "create": "W", "displays": "X", "build": "Y", "compose": "Z", "script": "AA", "sentence": "AB", "design": "AC", "says": "AD", "console": "AE", "make": "AF", "shows": "AG", "screen": "AH", "develop": "AI", "output": "AJ"}
 
-Generate a program that prints The quick brown fox jumps over the lazy dog in rust => p b m d n a j h g f i a e z r c
-Generate a program that prints Hello World in rust => p b m d n {c v r c
-Write a rust program that outputs 'The quick brown fox jumps over the lazy dog' => s b c m d x k j h g f i a e l
-Create a rust code that displays 'The quick brown fox jumps over the lazy dog' => t b c q d w k j h g f i a e l
-Build a rust program that prints 'The quick brown fox jumps over the lazy dog' => {i b c m d n k j h g f i a e l
-Compose a rust script that prints the sentence 'The quick brown fox jumps over the lazy dog' => {f b c {d d n a y k j h g f i a e l
-Design a rust program that says 'The quick brown fox jumps over the lazy dog' on the console => {a b c m d {e k j h g f i a e l o a {b
-Make a rust code that shows 'The quick brown fox jumps over the lazy dog' on the screen => u b c q d {k k j h g f i a e l o a {h
-Develop a rust program that prints 'The quick brown fox jumps over the lazy dog' on the output => {j b c m d n k j h g f i a e l o a {g
+    Every time I write a new prompt, use the dictionary to translate the token based sentence into a prompt that you can understand. Then act as if it was the original prompt and execute what the prompt says.
+
+Generate a program that prints The quick brown fox jumps over the lazy dog in rust => O A L B M  D E F G H  I R P C
+Generate a program that prints Hello World in rust => O A L B M S T P C
+Write a rust program that outputs 'The quick brown fox jumps over the lazy dog' => U A C L B V J D E F G H  I K
+Create a rust code that displays 'The quick brown fox jumps over the lazy dog' => W A C Q B X J D E F G H  I K
+Build a rust program that prints 'The quick brown fox jumps over the lazy dog' => Y A C L B M J D E F G H  I K
+Compose a rust script that prints the sentence 'The quick brown fox jumps over the lazy dog' => Z A C AA B M  AB J D E F G H  I K
+Design a rust program that says 'The quick brown fox jumps over the lazy dog' on the console => AC A C L B AD J D E F G H  I K N  AE
+Make a rust code that shows 'The quick brown fox jumps over the lazy dog' on the screen => AF A C Q B AG J D E F G H  I K N  AH
+Develop a rust program that prints 'The quick brown fox jumps over the lazy dog' on the output => AI A C L B M J D E F G H  I K N  AJ
 ```
+
+## SEE IT WORKING
+![](./demo_files/Screenshot%202023-02-08%20at%2016.23.47.png)
