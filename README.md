@@ -1,6 +1,28 @@
 # AI Prompt Shrtnr
 Most natural language AI's revenue is based on the number of tokens sent to their API, so this tool helps you save money by creating a token dictionary to shorten your prompts.
 
+With the emergence of AI, businesses that relies on heavy trained natural language processing models are flourishing. The most used business model seems to be "$ per token used" when sending a prompt to an natural language processing API.
+
+
+This tools serves as a middleman dictionnary injection that can be used to reduce the length of your prompt, hence saving you money.
+
+
+For instance, the following prompt
+```
+Write a short rust program that takes two list of number as input, and computes the GCD of the two list
+```
+
+which is 103 characters long, could be shorten to
+
+```
+O A V B J C W P Q R X Y Z AA AB  AC R  P Q (42 characters in length)
+```
+
+Saving half the cost of the original prompt.
+
+
+This tool is useful if your API performs many of the same prompts, as the first heading prompt that contains the dictionnary can be quite expensive.
+
 ## TODOS
 - Have the program to take a list of sentence
 - Fix dictionnary problems
