@@ -2,7 +2,7 @@
 This is a version 0.1.
 
 # AI Prompt Shrtnr
-With the emergence of AI, businesses that relies on heavy trained natural language processing models are flourishing. The most used business model seems to be "$ per token used" when sending a prompt to an natural language processing API.
+With the emergence of AI, businesses that relies on heavily trained natural language processing models are flourishing. The most used business model seems to be "$ per token used" when sending a prompt to an natural language processing API.
 
 
 This tools serves as a middleman dictionnary injection that can be used to reduce the length of your prompt, hence saving you money.
