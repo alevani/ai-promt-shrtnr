@@ -1,11 +1,16 @@
 # AI Prompt Shrtnr
-As most natural language AI's business models are based on the number of token sent to their API, this tool saved you money by generated a token dictionnary in order to shorten the lenght of your prompts.
+Most natural language AI's revenue is based on the number of tokens sent to their API, so this tool helps you save money by creating a token dictionary to shorten your prompts.
+
+## TODOS
+- Have the program to take a list of sentence
+- Fix dictionnary problems
+- Better prompt
 
 ## Disclaimer
 In a duty of sarcasm, most of the program has actually been written by an AI.
 
 ## How?
-The tool simply analyses a set of given prompts by generating a word to frequency map, and attributing a short token to each word.
+The tool works by analyzing a set of input prompts to generate a map of word frequencies, then assigns a short token to each word.
 
 ## RUN ME
 ```bash
