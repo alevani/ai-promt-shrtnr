@@ -1,5 +1,5 @@
 # PRE-READ DISCLAIMER
-This is a version 0.1
+This is a version 0.1.
 
 # AI Prompt Shrtnr
 With the emergence of AI, businesses that relies on heavy trained natural language processing models are flourishing. The most used business model seems to be "$ per token used" when sending a prompt to an natural language processing API.
@@ -25,7 +25,7 @@ O A V B J C W P Q R X Y Z AA AB  AC R  P Q
 This tool is useful if your API performs many of the same prompts, as the first heading prompt that contains the dictionnary can be quite expensive.
 
 ## TODOS
-- Have the program to take a list of sentence
+- Maybe we can add a version that shortens only the words by removing the vowels. this way it could be any sentence very easily, and the heading prompt could be "Consider the following prompt, where I removed all the vowels..."
 - Fix dictionnary problems
 - Better prompt
 - There are 1000 ways to improve the text analysis
