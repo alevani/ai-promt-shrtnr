@@ -6,3 +6,13 @@ In a duty of sarcasm, most of the program has actually been written by an AI.
 
 ## How?
 The tool simply analyses a set of given prompts by generating a word to frequency map, and attributing a short token to each word.
+
+## RUN ME
+```bash
+cargo run
+```
+
+output:
+
+```
+```

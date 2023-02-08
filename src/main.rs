@@ -57,15 +57,13 @@ fn main() {
     let sentences = vec!["Generate a program that prints The quick brown fox jumps over the lazy dog in rust", "Generate a program that prints Hello World in rust", "Write a rust program that outputs 'The quick brown fox jumps over the lazy dog'", "Create a rust code that displays 'The quick brown fox jumps over the lazy dog'", "Build a rust program that prints 'The quick brown fox jumps over the lazy dog'", "Compose a rust script that prints the sentence 'The quick brown fox jumps over the lazy dog'", "Design a rust program that says 'The quick brown fox jumps over the lazy dog' on the console", "Make a rust code that shows 'The quick brown fox jumps over the lazy dog' on the screen", "Develop a rust program that prints 'The quick brown fox jumps over the lazy dog' on the output"];
     let dictionary = generate_dictionary(&sentences);
 
-    let prompt = format!("
-        I will now talk only with a token generated sentence based on the following dictionnary:
+    println!("
+I will now talk only with a token generated sentence based on the following dictionnary:
 
        {dictionary:?}
 
-        Every time I write a new prompt use the dictionary to translate the token based sentence into a prompt that you can understand. Then act as if it was the original prompt and execute what the prompt says.
+Every time I write a new prompt use the dictionary to translate the token based sentence into a prompt that you can understand. Then act as if it was the original prompt and execute what the prompt says.
     ");
-
-    println!("{prompt:?}");
 
     for sentence in sentences {
         println!(
