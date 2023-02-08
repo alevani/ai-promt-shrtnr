@@ -62,7 +62,7 @@ I will now talk only with a token generated sentence based on the following dict
 
        {dictionary:?}
 
-Every time I write a new prompt use the dictionary to translate the token based sentence into a prompt that you can understand. Then act as if it was the original prompt and execute what the prompt says.
+Every time I write a new prompt, use the dictionary to translate the token based sentence into a prompt that you can understand. Then act as if it was the original prompt and execute what the prompt says.
     ");
 
     for sentence in sentences {
