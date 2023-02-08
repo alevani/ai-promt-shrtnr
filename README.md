@@ -9,7 +9,7 @@ Most natural language AI's revenue is based on the number of tokens sent to thei
 - When translating to tokenized sentence, if a word does not exist, add it to the dictionnary
 
 ## Disclaimer
-In a duty of sarcasm, most of the program has actually been written by an AI.
+In a duty of irony, most of the program has actually been written by an AI.
 
 ## How?
 The tool works by analyzing a set of input prompts to generate a map of word frequencies, then assigns a short token to each word.
